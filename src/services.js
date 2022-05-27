@@ -42,5 +42,12 @@ export function Fatorial (num){
         fat = fat * i;
     }
     return fat;
+}
 
+export function SequenciaPar (num){
+    let array = [];
+    for(let i = 0; i < num; i++){
+        array[i] = i * 2;
+    }
+    return array;
 }

@@ -1,4 +1,4 @@
-import { DiaSemana, Semaforo, Fatorial } from './services.js';
+import { DiaSemana, Semaforo, Fatorial, SequenciaPar } from './services.js';
 
 import { Router } from "express";
 
@@ -53,6 +53,27 @@ server.post('/fatorial', (req, resp) => {
         const x = Fatorial(b);
         resp.send({
             num:x
+        })
+    }
+
+    catch(err)
+    {
+        resp.send({
+            err:err.message
+        })
+    }
+})
+
+server.post('/sequenciapar', (req, resp) => {
+
+    try
+    {
+        const { num } = req.body;
+
+        const x = SequenciaPar(num);
+
+        resp.send({
+            "lim":x
         })
     }
 
