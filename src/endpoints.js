@@ -4,6 +4,8 @@ import { Router } from "express";
 
 const server = Router();
 
+/* Semáforo */
+
 server.get('/semaforo/:cor', (req, resp) => {
 
     try
@@ -23,6 +25,8 @@ server.get('/semaforo/:cor', (req, resp) => {
         })
     }
 })
+
+/* Dia da Semana */
 
 server.get('/diasemana', (req, resp) => {
 
@@ -44,6 +48,8 @@ server.get('/diasemana', (req, resp) => {
     }
 })
 
+/* Fatorial */
+
 server.post('/fatorial', (req, resp) => {
 
     try
@@ -63,6 +69,8 @@ server.post('/fatorial', (req, resp) => {
         })
     }
 })
+
+/* Sequência Par */
 
 server.post('/sequenciapar', (req, resp) => {
 

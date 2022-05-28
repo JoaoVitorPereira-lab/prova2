@@ -2,38 +2,42 @@ export function Semaforo (cor){
     let x = "";
 
     if(cor == "verde")
-        return x = "Pode Passar";
+        x = "Pode Passar";
     else if(cor == "vermelho")
-        return x = "Aguarde";
+        x = "Aguarde";
     else
-        return x = "Inválido";
+        x = "Inválido";
+
+    return x;
 }
 
 export function DiaSemana(dia){
-    let x ="";
+    let x = "";
 
     if(dia == 0)
-        return x = "DOMINGO";
+        x = "DOMINGO";
      
     else if (dia == 1)
-        return x = "SEGUNDA";
+        x = "SEGUNDA";
 
     else if (dia == 2)
-        return x ="TERÇA";
+        x ="TERÇA";
     
     else if (dia ==3)
-        return x = "QUARTA";
+        x = "QUARTA";
 
     else if (dia == 4)
-        return x ="QUINTA";
+        x ="QUINTA";
     
     else if (dia == 5)
-        return x ="SEXTA";
+        x ="SEXTA";
     
     else if (dia == 6)
-        return x ="SÁBADO";
+        x ="SÁBADO";
     else
-        return x = "coloque um número de 0 a 6";
+        x = "coloque um número de 0 a 6";
+
+    return x;
 }
 
 export function Fatorial (num){
